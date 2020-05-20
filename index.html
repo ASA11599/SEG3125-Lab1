@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>SEG3125 - Lab 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Survey</h1>
+            <p>The website to be evaluated: <a href="https://www.amazon.ca/">Amazon</a></p>
+            <div id="carousel">
+                <a id="imgLink" href="https://www.amazon.ca/">
+                    <img
+                        width="768"
+                        height="432"
+                        src="./assets/amazon_main.png"
+                        alt="img"
+                        id="websiteImage">
+                </a>
+                <br>
+                <div id="arrows">
+                    <i id="leftArrow" class="fas fa-arrow-left"></i>
+                    <i id="rightArrow" class="fas fa-arrow-right"></i>
+                    <p id="imgNumber">1</p>
+                </div>
+            </div>
+        </div>
+        <form id="myform">
+            <div class="form-section question">
+                <h2>What is the problem with language selection on picture 3 and how can it be improved ? <strong>*</strong></h2>
+                <input type="text" name="text" id="textInput">
+            </div>
+            <div class="form-section question">
+                <h2>Which of the following goals does this UI fulfill best ? <strong>*</strong></h2>
+                <input type="radio" name="goal" value="male">
+                <label for="consistency">Consistency</label><br>
+                <input type="radio" name="goal" value="female">
+                <label for="efficiency">Efficiency</label><br>
+                <input type="radio" name="goal" value="other">
+                <label for="usability">Usability</label>
+            </div>
+            <div class="form-section question">
+                <h2>Which of the three pages are consistent with each other ? <strong>*</strong></h2>
+                <input type="checkbox" name="page" value="1">
+                <label for="Red">1</label><br>
+                <input type="checkbox" name="page" value="2">
+                <label for="Green">2</label><br>
+                <input type="checkbox" name="page" value="3">
+                <label for="Blue">3</label>
+            </div>
+            <div class="form-section question">
+                <h2>Which of the following goals does this UI perform the worst at ? <strong>*</strong></h2>
+                <select id="dropdown">
+                    <option value="Consistency" selected="selected">Consistency</option>
+                    <option value="Efficiency">Efficiency</option>
+                    <option value="Usability">Usability</option>
+                </select>
+            </div>
+            <div class="form-section question">
+                <h2>Commments</h2>
+                <textarea rows="5" cols="30"></textarea>
+            </div>
+            <div class="form-section">
+                <button id="submitButton" type="button" class="block">
+                    <h3>Submit</h3>
+                </button>
+            </div>
+        </form>
+        <footer>
+            <p>Site created by <strong>Amayas Said Amer</strong></p>
+        </footer>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
