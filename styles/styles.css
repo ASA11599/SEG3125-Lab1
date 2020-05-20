@@ -23,6 +23,11 @@ button.block {
     width: 75%;
 }
 
+#likert > label{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #carousel > #arrows {
     text-align: center;
     display: inline;
